@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1731233695">
+  <File Type="RCFI_FILE" Name="eth_top.rcfi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="eth_top_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-DRC-RPX" Name="eth_top_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="eth_top_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="eth_top_methodology_drc_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="eth_top_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="eth_top_postroute_physopt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="eth_top_physopt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="eth_top_postplace_pwropt.dcp"/>
+  <File Type="PWROPT-DCP" Name="eth_top_pwropt.dcp"/>
+  <File Type="PLACE-DCP" Name="eth_top_placed.dcp"/>
+  <File Type="OPT-DCP" Name="eth_top_opt.dcp"/>
+  <File Type="ROUTE-BUS-SKEW" Name="eth_top_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="eth_top_clock_utilization_routed.rpt"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="eth_top.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="eth_top.sysdef"/>
+  <File Type="BITSTR-MMI" Name="eth_top.mmi"/>
+  <File Type="BITSTR-BMM" Name="eth_top_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="eth_top.nky"/>
+  <File Type="BITSTR-RBT" Name="eth_top.rbt"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="eth_top_bus_skew_routed.rpx"/>
+  <File Type="REPORTS-TCL" Name="eth_top_reports.tcl"/>
+  <File Type="ROUTE-TIMING-RPX" Name="eth_top_timing_summary_routed.rpx"/>
+  <File Type="OPT-HWDEF" Name="eth_top.hwdef"/>
+  <File Type="RBD_FILE" Name="eth_top.rbd"/>
+  <File Type="BITSTR-MSK" Name="eth_top.msk"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="eth_top_bus_skew_routed.pb"/>
+  <File Type="PA-TCL" Name="eth_top.tcl"/>
+  <File Type="ROUTE-TIMING-PB" Name="eth_top_timing_summary_routed.pb"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="RDI-RDI" Name="eth_top.vdi"/>
+  <File Type="OPT-DRC" Name="eth_top_drc_opted.rpt"/>
+  <File Type="NPI_FILE" Name="eth_top.npi"/>
+  <File Type="BG-BIN" Name="eth_top.bin"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="eth_top_timing_summary_routed.rpt"/>
+  <File Type="CFI_FILE" Name="eth_top.cfi"/>
+  <File Type="BG-DRC" Name="eth_top.drc"/>
+  <File Type="ROUTE-ERROR-DCP" Name="eth_top_routed_error.dcp"/>
+  <File Type="RNPI_FILE" Name="eth_top.rnpi"/>
+  <File Type="BG-BGN" Name="eth_top.bgn"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="eth_top_routed_bb.dcp"/>
+  <File Type="PDI-FILE" Name="eth_top.pdi"/>
+  <File Type="BG-BIT" Name="eth_top.bit"/>
+  <File Type="ROUTE-STATUS-PB" Name="eth_top_route_status.pb"/>
+  <File Type="PLACE-IO" Name="eth_top_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="eth_top_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="eth_top_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="eth_top_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="eth_top_incremental_reuse_pre_placed.rpt"/>
+  <File Type="ROUTE-DRC" Name="eth_top_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="eth_top_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="eth_top_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="eth_top_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="eth_top_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="eth_top_route_status.rpt"/>
+  <File Type="ROUTE-DCP" Name="eth_top_routed.dcp"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../src/uprv_ethernet_apb_bds_bride.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../src/uprv_ethernet_timescale.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../src/uprv_ethernet_eth_clockgen.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../src/uprv_ethernet_eth_crc.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../src/uprv_ethernet_ethmac_defines.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../src/uprv_ethernet_eth_fifo.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../src/uprv_ethernet_eth_maccontrol.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../src/uprv_ethernet_eth_macstatus.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../src/uprv_ethernet_eth_miim.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../src/uprv_ethernet_eth_outputcontrol.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../src/uprv_ethernet_eth_random.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../src/uprv_ethernet_eth_receivecontrol.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../src/uprv_ethernet_eth_register.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../src/uprv_ethernet_eth_registers.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../src/uprv_ethernet_eth_rxaddrcheck.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../src/uprv_ethernet_eth_rxcounters.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../src/uprv_ethernet_eth_rxethmac.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../src/uprv_ethernet_eth_rxstatem.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../src/uprv_ethernet_eth_shiftreg.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../src/uprv_ethernet_eth_spram_256x32.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../src/uprv_ethernet_eth_transmitcontrol.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../src/uprv_ethernet_eth_txcounters.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../src/uprv_ethernet_eth_txethmac.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../src/uprv_ethernet_eth_txstatem.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../src/uprv_ethernet_eth_wishbone.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../src/uprv_ethernet_eth_top.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="eth_top"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2021"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+    <Step Id="write_device_image"/>
+  </Strategy>
+</GenRun>

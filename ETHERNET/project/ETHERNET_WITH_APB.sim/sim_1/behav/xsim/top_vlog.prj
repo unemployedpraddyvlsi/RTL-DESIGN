@@ -1,0 +1,69 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../../src/uprv_ethernet_apb_bds_bride.sv" \
+"../../../../../tb/uprv_ethernet_master_sequencer.sv" \
+"../../../../../tb/uprv_ethernet_sequence_item.sv" \
+"../../../../../tb/uprv_ethernet_master_driver.sv" \
+"../../../../../tb/uprv_ethernet_master_active_agent.sv" \
+"../../../../../tb/uprv_ethernet_slave_sequencer.sv" \
+"../../../../../tb/uprv_ethernet_slave_driver.sv" \
+"../../../../../tb/uprv_ethernet_slave_active_agent.sv" \
+"../../../../../tb/uprv_ethernet_tx_input_monitor.sv" \
+"../../../../../tb/uprv_ethernet_tx_active_agent.sv" \
+"../../../../../tb/uprv_ethernet_tx_output_monitor.sv" \
+"../../../../../tb/uprv_ethernet_tx_passive_agent.sv" \
+"../../../../../tb/uprv_ethernet_apb_env.sv" \
+"../../../../../tb/uprv_ethernet_assertions.sv" \
+"../../../../../tb/uprv_ethernet_config_class.sv" \
+"../../../../../tb/uprv_ethernet_coverage.sv" \
+"../../../../../src/uprv_ethernet_eth_clockgen.sv" \
+"../../../../../src/uprv_ethernet_eth_crc.sv" \
+"../../../../../src/uprv_ethernet_eth_fifo.sv" \
+"../../../../../src/uprv_ethernet_eth_maccontrol.sv" \
+"../../../../../src/uprv_ethernet_eth_macstatus.sv" \
+"../../../../../src/uprv_ethernet_eth_miim.sv" \
+"../../../../../src/uprv_ethernet_eth_outputcontrol.sv" \
+"../../../../../src/uprv_ethernet_eth_random.sv" \
+"../../../../../src/uprv_ethernet_eth_receivecontrol.sv" \
+"../../../../../src/uprv_ethernet_eth_register.sv" \
+"../../../../../src/uprv_ethernet_eth_registers.sv" \
+"../../../../../src/uprv_ethernet_eth_rxaddrcheck.sv" \
+"../../../../../src/uprv_ethernet_eth_rxcounters.sv" \
+"../../../../../src/uprv_ethernet_eth_rxethmac.sv" \
+"../../../../../src/uprv_ethernet_eth_rxstatem.sv" \
+"../../../../../src/uprv_ethernet_eth_shiftreg.sv" \
+"../../../../../src/uprv_ethernet_eth_spram_256x32.sv" \
+"../../../../../src/uprv_ethernet_eth_top.sv" \
+"../../../../../src/uprv_ethernet_eth_transmitcontrol.sv" \
+"../../../../../src/uprv_ethernet_eth_txcounters.sv" \
+"../../../../../src/uprv_ethernet_eth_txethmac.sv" \
+"../../../../../src/uprv_ethernet_eth_txstatem.sv" \
+"../../../../../src/uprv_ethernet_eth_wishbone.sv" \
+"../../../../../tb/uprv_ethernet_interface.sv" \
+"../../../../../tb/uprv_ethernet_tx_mac_sequencer.sv" \
+"../../../../../tb/uprv_ethernet_tx_mac_driver.sv" \
+"../../../../../tb/uprv_ethernet_tx_mac_input_monitor.sv" \
+"../../../../../tb/uprv_ethernet_tx_mac_active_agent.sv" \
+"../../../../../tb/uprv_ethernet_tx_mac_output_monitor.sv" \
+"../../../../../tb/uprv_ethernet_tx_mac_passive_agent.sv" \
+"../../../../../tb/uprv_ethernet_tx_mac_env.sv" \
+"../../../../../tb/uprv_ethernet_tx_scroeboard.sv" \
+"../../../../../tb/uprv_ethernet_virtual_sequencer.sv" \
+"../../../../../tb/uprv_ethernet_main_env.sv" \
+"../../../../../tb/uprv_ethernet_sequence_related_to_apb_testcases.sv" \
+"../../../../../tb/uprv_ethernet_sequence_related_to_mcrs_txen_rd_txbdnum.sv" \
+"../../../../../tb/uprv_ethernet_sequence_related_to_pad_hugen_frame_length.sv" \
+"../../../../../tb/uprv_ethernet_sequence_related_to_irq_tx_e_m_tx_b_m_tx_e_tx_b_int_o.sv" \
+"../../../../../tb/uprv_ethernet_sequence_related_to_no_pre_ifg.sv" \
+"../../../../../tb/uprv_ethernet_master_sequence.sv" \
+"../../../../../tb/uprv_ethernet_slave_sequence.sv" \
+"../../../../../tb/uprv_ethernet_tx_mac__sequence.sv" \
+"../../../../../tb/uprv_ethernet_virtual_sequence.sv" \
+"../../../../../tb/uprv_ethernet_package.sv" \
+"../../../../../tb/uprv_ethernet_test_bench.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1731231815">
+  <File Type="VDS-TIMING-PB" Name="eth_top_timing_summary_synth.pb"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="eth_top_timing_summary_synth.rpt"/>
+  <File Type="RDS-DCP" Name="eth_top.dcp"/>
+  <File Type="RDS-UTIL-PB" Name="eth_top_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="eth_top_utilization_synth.rpt"/>
+  <File Type="RDS-PROPCONSTRS" Name="eth_top_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="eth_top.vds"/>
+  <File Type="REPORTS-TCL" Name="eth_top_reports.tcl"/>
+  <File Type="PA-TCL" Name="eth_top.tcl"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/UPRV_ETHERNET_DUT/uprv_ethernet_apb_bds_bride.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../UPRV_ETHERNET_DUT/uprv_ethernet_apb_bds_bride.sv"/>
+        <Attr Name="ImportTime" Val="1731230063"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/UPRV_ETHERNET_DUT/uprv_ethernet_timescale.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../UPRV_ETHERNET_DUT/uprv_ethernet_timescale.sv"/>
+        <Attr Name="ImportTime" Val="1731231073"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/UPRV_ETHERNET_DUT/uprv_ethernet_eth_clockgen.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../UPRV_ETHERNET_DUT/uprv_ethernet_eth_clockgen.sv"/>
+        <Attr Name="ImportTime" Val="1731230103"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/UPRV_ETHERNET_DUT/uprv_ethernet_eth_crc.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../UPRV_ETHERNET_DUT/uprv_ethernet_eth_crc.sv"/>
+        <Attr Name="ImportTime" Val="1731230123"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/UPRV_ETHERNET_DUT/uprv_ethernet_eth_fifo.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../UPRV_ETHERNET_DUT/uprv_ethernet_eth_fifo.sv"/>
+        <Attr Name="ImportTime" Val="1731230157"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/UPRV_ETHERNET_DUT/uprv_ethernet_eth_maccontrol.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../UPRV_ETHERNET_DUT/uprv_ethernet_eth_maccontrol.sv"/>
+        <Attr Name="ImportTime" Val="1731230201"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/UPRV_ETHERNET_DUT/uprv_ethernet_eth_macstatus.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../UPRV_ETHERNET_DUT/uprv_ethernet_eth_macstatus.sv"/>
+        <Attr Name="ImportTime" Val="1731230378"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/UPRV_ETHERNET_DUT/uprv_ethernet_eth_miim.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../UPRV_ETHERNET_DUT/uprv_ethernet_eth_miim.sv"/>
+        <Attr Name="ImportTime" Val="1731230412"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/UPRV_ETHERNET_DUT/uprv_ethernet_eth_outputcontrol.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../UPRV_ETHERNET_DUT/uprv_ethernet_eth_outputcontrol.sv"/>
+        <Attr Name="ImportTime" Val="1731230445"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/UPRV_ETHERNET_DUT/uprv_ethernet_eth_random.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../UPRV_ETHERNET_DUT/uprv_ethernet_eth_random.sv"/>
+        <Attr Name="ImportTime" Val="1731230477"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/UPRV_ETHERNET_DUT/uprv_ethernet_eth_receivecontrol.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../UPRV_ETHERNET_DUT/uprv_ethernet_eth_receivecontrol.sv"/>
+        <Attr Name="ImportTime" Val="1731230532"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/UPRV_ETHERNET_DUT/uprv_ethernet_eth_register.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../UPRV_ETHERNET_DUT/uprv_ethernet_eth_register.sv"/>
+        <Attr Name="ImportTime" Val="1731230623"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/UPRV_ETHERNET_DUT/uprv_ethernet_ethmac_defines.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../UPRV_ETHERNET_DUT/uprv_ethernet_ethmac_defines.sv"/>
+        <Attr Name="ImportTime" Val="1731230233"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/UPRV_ETHERNET_DUT/uprv_ethernet_eth_registers.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../UPRV_ETHERNET_DUT/uprv_ethernet_eth_registers.sv"/>
+        <Attr Name="ImportTime" Val="1731230601"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/UPRV_ETHERNET_DUT/uprv_ethernet_eth_rxaddrcheck.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../UPRV_ETHERNET_DUT/uprv_ethernet_eth_rxaddrcheck.sv"/>
+        <Attr Name="ImportTime" Val="1731230655"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/UPRV_ETHERNET_DUT/uprv_ethernet_eth_rxcounters.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../UPRV_ETHERNET_DUT/uprv_ethernet_eth_rxcounters.sv"/>
+        <Attr Name="ImportTime" Val="1731230685"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/UPRV_ETHERNET_DUT/uprv_ethernet_eth_rxethmac.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../UPRV_ETHERNET_DUT/uprv_ethernet_eth_rxethmac.sv"/>
+        <Attr Name="ImportTime" Val="1731230717"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/UPRV_ETHERNET_DUT/uprv_ethernet_eth_rxstatem.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../UPRV_ETHERNET_DUT/uprv_ethernet_eth_rxstatem.sv"/>
+        <Attr Name="ImportTime" Val="1731230753"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/UPRV_ETHERNET_DUT/uprv_ethernet_eth_shiftreg.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../UPRV_ETHERNET_DUT/uprv_ethernet_eth_shiftreg.sv"/>
+        <Attr Name="ImportTime" Val="1731230795"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/UPRV_ETHERNET_DUT/uprv_ethernet_eth_spram_256x32.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../UPRV_ETHERNET_DUT/uprv_ethernet_eth_spram_256x32.sv"/>
+        <Attr Name="ImportTime" Val="1731230841"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/UPRV_ETHERNET_DUT/uprv_ethernet_eth_transmitcontrol.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../UPRV_ETHERNET_DUT/uprv_ethernet_eth_transmitcontrol.sv"/>
+        <Attr Name="ImportTime" Val="1731230908"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/UPRV_ETHERNET_DUT/uprv_ethernet_eth_txcounters.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../UPRV_ETHERNET_DUT/uprv_ethernet_eth_txcounters.sv"/>
+        <Attr Name="ImportTime" Val="1731230940"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/UPRV_ETHERNET_DUT/uprv_ethernet_eth_txethmac.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../UPRV_ETHERNET_DUT/uprv_ethernet_eth_txethmac.sv"/>
+        <Attr Name="ImportTime" Val="1731230963"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/UPRV_ETHERNET_DUT/uprv_ethernet_eth_txstatem.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../UPRV_ETHERNET_DUT/uprv_ethernet_eth_txstatem.sv"/>
+        <Attr Name="ImportTime" Val="1731230996"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/UPRV_ETHERNET_DUT/uprv_ethernet_eth_wishbone.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../UPRV_ETHERNET_DUT/uprv_ethernet_eth_wishbone.sv"/>
+        <Attr Name="ImportTime" Val="1731231039"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/UPRV_ETHERNET_DUT/uprv_ethernet_eth_top.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../UPRV_ETHERNET_DUT/uprv_ethernet_eth_top.sv"/>
+        <Attr Name="ImportTime" Val="1731230910"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="eth_top"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2021">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

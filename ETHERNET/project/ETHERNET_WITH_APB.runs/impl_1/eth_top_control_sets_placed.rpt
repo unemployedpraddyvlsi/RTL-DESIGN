@@ -1,0 +1,159 @@
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.2 (lin64) Build 3367213 Tue Oct 19 02:47:39 MDT 2021
+| Date         : Sun Nov 10 15:45:27 2024
+| Host         : krisemi-satcom-Vostro-3520 running 64-bit Ubuntu 20.04.6 LTS
+| Command      : report_control_sets -verbose -file eth_top_control_sets_placed.rpt
+| Design       : eth_top
+| Device       : xc7z020
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    81 |
+|    Minimum number of control sets                        |    81 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   113 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    81 |
+| >= 0 to < 4        |     1 |
+| >= 4 to < 6        |    13 |
+| >= 6 to < 8        |     4 |
+| >= 8 to < 10       |    10 |
+| >= 10 to < 12      |     1 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    52 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              80 |           34 |
+| No           | No                    | Yes                    |             315 |          140 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |             604 |          185 |
+| Yes          | Yes                   | No                     |            1024 |          341 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------+--------------------------------------------------------+------------------------+------------------+----------------+--------------+
+|         Clock Signal        |                      Enable Signal                     |    Set/Reset Signal    | Slice Load Count | Bel Load Count | Bels / Slice |
++-----------------------------+--------------------------------------------------------+------------------------+------------------+----------------+--------------+
+|  wishbone/state_32          |                                                        |                        |                1 |              2 |         2.00 |
+|  txethmac1/txcounters1/E[0] |                                                        |                        |                3 |              4 |         1.33 |
+|  mtx_clk_pad_i_IBUF_BUFG    | txethmac1/txcounters1/ColWindow_reg[0]                 | wishbone/rx_fifo/SR[0] |                1 |              4 |         4.00 |
+|  mtx_clk_pad_i_IBUF_BUFG    | txethmac1/txstatem1/FSM_sequential_state_tx[3]_i_1_n_0 | wishbone/rx_fifo/SR[0] |                3 |              4 |         1.33 |
+|  pclk_i_IBUF_BUFG           | wishbone/rx_fifo/read_pointer[3]_i_1_n_0               | wishbone/rx_fifo/SR[0] |                2 |              4 |         2.00 |
+|  pclk_i_IBUF_BUFG           | wishbone/tx_fifo/read_pointer[3]_i_1__0_n_0            | wishbone/rx_fifo/SR[0] |                1 |              4 |         4.00 |
+|  pclk_i_IBUF_BUFG           | wishbone/tx_fifo/write_pointer[3]_i_1_n_0              | wishbone/rx_fifo/SR[0] |                1 |              4 |         4.00 |
+|  pclk_i_IBUF_BUFG           | wishbone/rx_fifo/write_pointer[3]_i_1__0_n_0           | wishbone/rx_fifo/SR[0] |                2 |              4 |         2.00 |
+|  mrx_clk_pad_i_IBUF_BUFG    |                                                        |                        |                2 |              4 |         2.00 |
+|  mrx_clk_pad_i_IBUF_BUFG    | maccontrol1/receivecontrol1/ByteCnt[4]_i_1_n_0         | wishbone/rx_fifo/SR[0] |                2 |              5 |         2.50 |
+|  pclk_i_IBUF_BUFG           | wishbone/rx_fifo/cnt[4]_i_1__0_n_0                     | wishbone/rx_fifo/SR[0] |                2 |              5 |         2.50 |
+|  pclk_i_IBUF_BUFG           | wishbone/tx_fifo/cnt[4]_i_1_n_0                        | wishbone/rx_fifo/SR[0] |                3 |              5 |         1.67 |
+|  mrx_clk_pad_i_IBUF_BUFG    | rxethmac1/rxcounters1/IFGCounter[4]_i_1_n_0            | wishbone/rx_fifo/SR[0] |                2 |              5 |         2.50 |
+|  pclk_i_IBUF_BUFG           | ethreg1/MIIADDRESS_0/MIIADDRESS_Wr0                    | wishbone/rx_fifo/SR[0] |                2 |              5 |         2.50 |
+|  pclk_i_IBUF_BUFG           | wishbone/TxBDAddress[7]_i_1_n_0                        | wishbone/rx_fifo/SR[0] |                2 |              7 |         3.50 |
+|  pclk_i_IBUF_BUFG           | wishbone/RxBDAddress[7]_i_1_n_0                        | wishbone/rx_fifo/SR[0] |                3 |              7 |         2.33 |
+|  pclk_i_IBUF_BUFG           | wishbone/rxe_low_reg_inv_0[0]                          | wishbone/rx_fifo/SR[0] |                2 |              7 |         3.50 |
+|  pclk_i_IBUF_BUFG           | ethreg1/INT_MASK_0/INT_MASK_Wr                         | wishbone/rx_fifo/SR[0] |                3 |              7 |         2.33 |
+|  mtx_clk_pad_i_IBUF_BUFG    | wishbone/TxData[7]_i_1_n_0                             | wishbone/rx_fifo/SR[0] |                6 |              8 |         1.33 |
+|  mrx_clk_pad_i_IBUF_BUFG    | rxethmac1/rxstatem1/E[0]                               | wishbone/rx_fifo/SR[0] |                3 |              8 |         2.67 |
+|  mrx_clk_pad_i_IBUF_BUFG    | rxethmac1/rxstatem1/E[1]                               | wishbone/rx_fifo/SR[0] |                3 |              8 |         2.67 |
+|  mrx_clk_pad_i_IBUF_BUFG    | wishbone/RxDataLatched1[23]_i_1_n_0                    | wishbone/rx_fifo/SR[0] |                1 |              8 |         8.00 |
+|  mrx_clk_pad_i_IBUF_BUFG    | wishbone/RxDataLatched1[15]_i_1_n_0                    | wishbone/rx_fifo/SR[0] |                2 |              8 |         4.00 |
+|  mrx_clk_pad_i_IBUF_BUFG    | wishbone/RxDataLatched1[31]_i_1_n_0                    | wishbone/rx_fifo/SR[0] |                1 |              8 |         8.00 |
+|  pclk_i_IBUF_BUFG           | ethreg1/TX_BD_NUM_0/TX_BD_NUM_Wr                       | wishbone/rx_fifo/SR[0] |                2 |              8 |         4.00 |
+|  mrx_clk_pad_i_IBUF_BUFG    | rxethmac1/rxstatem1/DelayData_reg[0]                   | wishbone/rx_fifo/SR[0] |                2 |              8 |         4.00 |
+|  mrx_clk_pad_i_IBUF_BUFG    | rxethmac1/rxstatem1/FSM_onehot_state_rx[8]_i_1_n_0     | wishbone/rx_fifo/SR[0] |                4 |              9 |         2.25 |
+|  pclk_i_IBUF_BUFG           | ethreg1/MODER_0/E[0]                                   | wishbone/rx_fifo/SR[0] |                2 |              9 |         4.50 |
+|  mtx_clk_pad_i_IBUF_BUFG    | txethmac1/txstatem1/E[0]                               | wishbone/rx_fifo/SR[0] |                3 |             10 |         3.33 |
+|  mtx_clk_pad_i_IBUF_BUFG    | txethmac1/txstatem1/TxStartFrm_reg[0]                  | wishbone/rx_fifo/SR[0] |                4 |             16 |         4.00 |
+|  pclk_i_IBUF_BUFG           | wishbone/TxLength[15]_i_1_n_0                          | wishbone/rx_fifo/SR[0] |                5 |             16 |         3.20 |
+|  mtx_clk_pad_i_IBUF_BUFG    | txethmac1/txcounters1/ByteCnt[15]_i_1_n_0              | wishbone/rx_fifo/SR[0] |                3 |             16 |         5.33 |
+|  mrx_clk_pad_i_IBUF_BUFG    | rxethmac1/rxstatem1/FSM_onehot_state_rx_reg[6]_0[0]    | wishbone/rx_fifo/SR[0] |                3 |             16 |         5.33 |
+|  mrx_clk_pad_i_IBUF_BUFG    | rxethmac1/rxcounters1/ByteCnt[15]_i_1__0_n_0           | wishbone/rx_fifo/SR[0] |                5 |             16 |         3.20 |
+|  pclk_i_IBUF_BUFG           | ethreg1/MAC_ADDR1_0/E[0]                               | wishbone/rx_fifo/SR[0] |                6 |             16 |         2.67 |
+|  pclk_i_IBUF_BUFG           | wishbone/TxBDReady199_out                              | wishbone/rx_fifo/SR[0] |                7 |             18 |         2.57 |
+|  mrx_clk_pad_i_IBUF_BUFG    | macstatus1/LoadRxStatus                                | wishbone/rx_fifo/SR[0] |                8 |             19 |         2.38 |
+|  pclk_i_IBUF_BUFG           | wishbone/TxPointerMSB[2]_i_1_n_0                       | wishbone/rx_fifo/SR[0] |                8 |             30 |         3.75 |
+|  pclk_i_IBUF_BUFG           | wishbone/rx_fifo/fifo[5][31]_i_1__0_n_0                | wishbone/rx_fifo/SR[0] |               10 |             32 |         3.20 |
+|  pclk_i_IBUF_BUFG           | wishbone/tx_fifo/fifo[0][31]_i_1_n_0                   | wishbone/rx_fifo/SR[0] |                8 |             32 |         4.00 |
+|  pclk_i_IBUF_BUFG           | wishbone/tx_fifo/fifo[10][31]_i_1_n_0                  | wishbone/rx_fifo/SR[0] |               10 |             32 |         3.20 |
+|  pclk_i_IBUF_BUFG           | wishbone/tx_fifo/fifo[14][31]_i_1_n_0                  | wishbone/rx_fifo/SR[0] |                9 |             32 |         3.56 |
+|  pclk_i_IBUF_BUFG           | wishbone/tx_fifo/fifo[13][31]_i_1_n_0                  | wishbone/rx_fifo/SR[0] |               14 |             32 |         2.29 |
+|  pclk_i_IBUF_BUFG           | wishbone/rx_fifo/fifo[2][31]_i_1__0_n_0                | wishbone/rx_fifo/SR[0] |                8 |             32 |         4.00 |
+|  pclk_i_IBUF_BUFG           | wishbone/rx_fifo/fifo[3][31]_i_1__0_n_0                | wishbone/rx_fifo/SR[0] |                8 |             32 |         4.00 |
+|  pclk_i_IBUF_BUFG           | wishbone/rx_fifo/fifo[4][31]_i_1__0_n_0                | wishbone/rx_fifo/SR[0] |               10 |             32 |         3.20 |
+|  pclk_i_IBUF_BUFG           | wishbone/tx_fifo/fifo[1][31]_i_1_n_0                   | wishbone/rx_fifo/SR[0] |                8 |             32 |         4.00 |
+|  pclk_i_IBUF_BUFG           | wishbone/rx_fifo/fifo[6][31]_i_1__0_n_0                | wishbone/rx_fifo/SR[0] |               10 |             32 |         3.20 |
+|  pclk_i_IBUF_BUFG           | wishbone/rx_fifo/fifo[7][31]_i_1__0_n_0                | wishbone/rx_fifo/SR[0] |               18 |             32 |         1.78 |
+|  pclk_i_IBUF_BUFG           | wishbone/rx_fifo/fifo[8][31]_i_1__0_n_0                | wishbone/rx_fifo/SR[0] |                6 |             32 |         5.33 |
+|  pclk_i_IBUF_BUFG           | wishbone/rx_fifo/fifo[9][31]_i_1__0_n_0                | wishbone/rx_fifo/SR[0] |               17 |             32 |         1.88 |
+|  mrx_clk_pad_i_IBUF_BUFG    | wishbone/RxDataLatched2[31]_i_1_n_0                    | wishbone/rx_fifo/SR[0] |                8 |             32 |         4.00 |
+|  pclk_i_IBUF_BUFG           | wishbone/tx_fifo/fifo[12][31]_i_1_n_0                  | wishbone/rx_fifo/SR[0] |               13 |             32 |         2.46 |
+|  pclk_i_IBUF_BUFG           | ethreg1/MAC_ADDR0_0/E[0]                               | wishbone/rx_fifo/SR[0] |               10 |             32 |         3.20 |
+|  mtx_clk_pad_i_IBUF_BUFG    | wishbone/TxDataLatched0                                | wishbone/rx_fifo/SR[0] |                4 |             32 |         8.00 |
+|  pclk_i_IBUF_BUFG           | wishbone/tx_fifo/fifo[15][31]_i_1_n_0                  | wishbone/rx_fifo/SR[0] |               12 |             32 |         2.67 |
+|  pclk_i_IBUF_BUFG           | wishbone/tx_fifo/fifo[3][31]_i_1_n_0                   | wishbone/rx_fifo/SR[0] |               11 |             32 |         2.91 |
+|  pclk_i_IBUF_BUFG           | wishbone/rx_fifo/fifo[0][31]_i_1__0_n_0                | wishbone/rx_fifo/SR[0] |                8 |             32 |         4.00 |
+|  pclk_i_IBUF_BUFG           | wishbone/rx_fifo/fifo[10][31]_i_1__0_n_0               | wishbone/rx_fifo/SR[0] |                7 |             32 |         4.57 |
+|  pclk_i_IBUF_BUFG           | wishbone/rx_fifo/fifo[11][31]_i_1__0_n_0               | wishbone/rx_fifo/SR[0] |               10 |             32 |         3.20 |
+|  pclk_i_IBUF_BUFG           | wishbone/rx_fifo/fifo[12][31]_i_1__0_n_0               | wishbone/rx_fifo/SR[0] |                8 |             32 |         4.00 |
+|  pclk_i_IBUF_BUFG           | wishbone/rx_fifo/fifo[13][31]_i_1__0_n_0               | wishbone/rx_fifo/SR[0] |                7 |             32 |         4.57 |
+|  pclk_i_IBUF_BUFG           | wishbone/rx_fifo/fifo[14][31]_i_1__0_n_0               | wishbone/rx_fifo/SR[0] |                6 |             32 |         5.33 |
+|  pclk_i_IBUF_BUFG           | wishbone/rx_fifo/fifo[15][31]_i_1__0_n_0               | wishbone/rx_fifo/SR[0] |               11 |             32 |         2.91 |
+|  pclk_i_IBUF_BUFG           | wishbone/rx_fifo/fifo[1][31]_i_1__0_n_0                | wishbone/rx_fifo/SR[0] |                5 |             32 |         6.40 |
+|  pclk_i_IBUF_BUFG           | wishbone/tx_fifo/fifo[2][31]_i_1_n_0                   | wishbone/rx_fifo/SR[0] |               12 |             32 |         2.67 |
+|  pclk_i_IBUF_BUFG           | wishbone/tx_fifo/fifo[4][31]_i_1_n_0                   | wishbone/rx_fifo/SR[0] |               10 |             32 |         3.20 |
+|  pclk_i_IBUF_BUFG           | wishbone/tx_fifo/fifo[5][31]_i_1_n_0                   | wishbone/rx_fifo/SR[0] |               11 |             32 |         2.91 |
+|  pclk_i_IBUF_BUFG           | wishbone/tx_fifo/fifo[6][31]_i_1_n_0                   | wishbone/rx_fifo/SR[0] |                7 |             32 |         4.57 |
+|  pclk_i_IBUF_BUFG           | wishbone/tx_fifo/fifo[7][31]_i_1_n_0                   | wishbone/rx_fifo/SR[0] |               18 |             32 |         1.78 |
+|  pclk_i_IBUF_BUFG           | wishbone/tx_fifo/fifo[8][31]_i_1_n_0                   | wishbone/rx_fifo/SR[0] |               17 |             32 |         1.88 |
+|  pclk_i_IBUF_BUFG           | wishbone/tx_fifo/fifo[9][31]_i_1_n_0                   | wishbone/rx_fifo/SR[0] |               22 |             32 |         1.45 |
+|  pclk_i_IBUF_BUFG           | wishbone/tx_fifo/fifo[11][31]_i_1_n_0                  | wishbone/rx_fifo/SR[0] |               10 |             32 |         3.20 |
+|  pclk_i_IBUF_BUFG           | wishbone/RxPointerLSB_rst[1]_i_1_n_0                   | wishbone/rx_fifo/SR[0] |                9 |             32 |         3.56 |
+|  pclk_i_IBUF_BUFG           | u_apb_BDs_bridge/wb_pwdata_o_next                      | wishbone/rx_fifo/SR[0] |                9 |             42 |         4.67 |
+|  pclk_i_IBUF_BUFG           | wishbone/TxEn_i_1_n_0                                  | wishbone/rx_fifo/SR[0] |               14 |             42 |         3.00 |
+|  pclk_i_IBUF_BUFG           | wishbone/rx_fifo/E[0]                                  | wishbone/rx_fifo/SR[0] |               22 |             60 |         2.73 |
+|  pclk_i_IBUF_BUFG           |                                                        |                        |               28 |             72 |         2.57 |
+|  mtx_clk_pad_i_IBUF_BUFG    |                                                        | wishbone/rx_fifo/SR[0] |               39 |             86 |         2.21 |
+|  pclk_i_IBUF_BUFG           |                                                        | wishbone/rx_fifo/SR[0] |               53 |            112 |         2.11 |
+|  mrx_clk_pad_i_IBUF_BUFG    |                                                        | wishbone/rx_fifo/SR[0] |               48 |            117 |         2.44 |
++-----------------------------+--------------------------------------------------------+------------------------+------------------+----------------+--------------+
+
+

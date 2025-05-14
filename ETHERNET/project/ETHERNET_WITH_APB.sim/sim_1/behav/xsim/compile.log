@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_apb_bds_bride.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apb_BDs_bridge
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/krisemi_satcom/ETHERNET/tb/uprv_ethernet_master_sequencer.sv" into library xil_defaultlib
+ERROR: [VRFC 10-3805] use of undefined macro 'uvm_component_utils' [/home/krisemi_satcom/ETHERNET/tb/uprv_ethernet_master_sequencer.sv:5]
+ERROR: [VRFC 10-4982] syntax error near '(' [/home/krisemi_satcom/ETHERNET/tb/uprv_ethernet_master_sequencer.sv:5]
+ERROR: [VRFC 10-4982] syntax error near '(' [/home/krisemi_satcom/ETHERNET/tb/uprv_ethernet_master_sequencer.sv:9]

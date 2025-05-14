@@ -1,0 +1,27 @@
+
+*** Running vivado
+    with args -log eth_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source eth_top.tcl
+
+
+****** Vivado v2021.2 (64-bit)
+  **** SW Build 3367213 on Tue Oct 19 02:47:39 MDT 2021
+  **** IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source eth_top.tcl -notrace
+Command: synth_design -top eth_top -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 49473
+ERROR: [Synth 8-1766] cannot open include file timescale.sv [/home/krisemi_satcom/ETHERNET/local_project/ethernet_with_apb/ethernet_with_apb.srcs/sources_1/imports/UPRV_ETHERNET_DUT/uprv_ethernet_eth_crc.sv:20]
+INFO: [Synth 8-2350] module eth_crc ignored due to previous errors [/home/krisemi_satcom/ETHERNET/local_project/ethernet_with_apb/ethernet_with_apb.srcs/sources_1/imports/UPRV_ETHERNET_DUT/uprv_ethernet_eth_crc.sv:21]
+Failed to read verilog '/home/krisemi_satcom/ETHERNET/local_project/ethernet_with_apb/ethernet_with_apb.srcs/sources_1/imports/UPRV_ETHERNET_DUT/uprv_ethernet_eth_crc.sv'
+INFO: [Common 17-83] Releasing license: Synthesis
+6 Infos, 0 Warnings, 0 Critical Warnings and 2 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Vivado Synthesis failed
+INFO: [Common 17-206] Exiting Vivado at Sun Nov 10 15:13:52 2024...
+Parent process (pid 49451) has died. This helper process will now exit

@@ -1,0 +1,694 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:47:39 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Sun Nov 10 15:44:05 2024
+# Process ID: 53742
+# Current directory: /home/krisemi_satcom/ETHERNET/project/ETHERNET_WITH_APB.runs/synth_1
+# Command line: vivado -log eth_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source eth_top.tcl
+# Log file: /home/krisemi_satcom/ETHERNET/project/ETHERNET_WITH_APB.runs/synth_1/eth_top.vds
+# Journal file: /home/krisemi_satcom/ETHERNET/project/ETHERNET_WITH_APB.runs/synth_1/vivado.jou
+# Running On: krisemi-satcom-Vostro-3520, OS: Linux, CPU Frequency: 3000.000 MHz, CPU Physical cores: 2, Host memory: 8034 MB
+#-----------------------------------------------------------
+source eth_top.tcl -notrace
+Command: synth_design -top eth_top -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 53768
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2846.895 ; gain = 0.000 ; free physical = 270 ; free virtual = 2151
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'eth_top' [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_top.sv:23]
+INFO: [Synth 8-251]           ********************************************* [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_top.sv:186]
+INFO: [Synth 8-251]           ============================================= [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_top.sv:187]
+INFO: [Synth 8-251]           eth_top.v will be removed shortly. [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_top.sv:188]
+INFO: [Synth 8-251]           Please use ethmac.v as top level file instead [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_top.sv:189]
+INFO: [Synth 8-251]           ============================================= [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_top.sv:190]
+INFO: [Synth 8-251]           ********************************************* [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_top.sv:191]
+INFO: [Synth 8-6157] synthesizing module 'eth_miim' [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_miim.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'eth_clockgen' [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_clockgen.sv:22]
+INFO: [Synth 8-6155] done synthesizing module 'eth_clockgen' (1#1) [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_clockgen.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'eth_shiftreg' [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_shiftreg.sv:21]
+INFO: [Synth 8-6155] done synthesizing module 'eth_shiftreg' (2#1) [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_shiftreg.sv:21]
+INFO: [Synth 8-6157] synthesizing module 'eth_outputcontrol' [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_outputcontrol.sv:22]
+INFO: [Synth 8-6155] done synthesizing module 'eth_outputcontrol' (3#1) [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_outputcontrol.sv:22]
+INFO: [Synth 8-6155] done synthesizing module 'eth_miim' (4#1) [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_miim.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'eth_registers' [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_registers.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'eth_register' [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_register.sv:22]
+	Parameter WIDTH bound to: 8 - type: integer 
+	Parameter RESET_VALUE bound to: 8'b00000000 
+INFO: [Synth 8-6155] done synthesizing module 'eth_register' (5#1) [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_register.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'eth_register__parameterized0' [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_register.sv:22]
+	Parameter WIDTH bound to: 8 - type: integer 
+	Parameter RESET_VALUE bound to: 8'b10100010 
+INFO: [Synth 8-6155] done synthesizing module 'eth_register__parameterized0' (5#1) [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_register.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'eth_register__parameterized1' [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_register.sv:22]
+	Parameter WIDTH bound to: 1 - type: integer 
+	Parameter RESET_VALUE bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'eth_register__parameterized1' (5#1) [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_register.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'eth_register__parameterized2' [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_register.sv:22]
+	Parameter WIDTH bound to: 7 - type: integer 
+	Parameter RESET_VALUE bound to: 7'b0000000 
+INFO: [Synth 8-6155] done synthesizing module 'eth_register__parameterized2' (5#1) [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_register.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'eth_register__parameterized3' [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_register.sv:22]
+	Parameter WIDTH bound to: 7 - type: integer 
+	Parameter RESET_VALUE bound to: 7'b0010101 
+INFO: [Synth 8-6155] done synthesizing module 'eth_register__parameterized3' (5#1) [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_register.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'eth_register__parameterized4' [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_register.sv:22]
+	Parameter WIDTH bound to: 7 - type: integer 
+	Parameter RESET_VALUE bound to: 7'b0001100 
+INFO: [Synth 8-6155] done synthesizing module 'eth_register__parameterized4' (5#1) [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_register.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'eth_register__parameterized5' [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_register.sv:22]
+	Parameter WIDTH bound to: 7 - type: integer 
+	Parameter RESET_VALUE bound to: 7'b0010010 
+INFO: [Synth 8-6155] done synthesizing module 'eth_register__parameterized5' (5#1) [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_register.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'eth_register__parameterized6' [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_register.sv:22]
+	Parameter WIDTH bound to: 8 - type: integer 
+	Parameter RESET_VALUE bound to: 8'b00000110 
+INFO: [Synth 8-6155] done synthesizing module 'eth_register__parameterized6' (5#1) [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_register.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'eth_register__parameterized7' [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_register.sv:22]
+	Parameter WIDTH bound to: 8 - type: integer 
+	Parameter RESET_VALUE bound to: 8'b01000000 
+INFO: [Synth 8-6155] done synthesizing module 'eth_register__parameterized7' (5#1) [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_register.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'eth_register__parameterized8' [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_register.sv:22]
+	Parameter WIDTH bound to: 6 - type: integer 
+	Parameter RESET_VALUE bound to: 6'b111111 
+INFO: [Synth 8-6155] done synthesizing module 'eth_register__parameterized8' (5#1) [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_register.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'eth_register__parameterized9' [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_register.sv:22]
+	Parameter WIDTH bound to: 4 - type: integer 
+	Parameter RESET_VALUE bound to: 4'b1111 
+INFO: [Synth 8-6155] done synthesizing module 'eth_register__parameterized9' (5#1) [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_register.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'eth_register__parameterized10' [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_register.sv:22]
+	Parameter WIDTH bound to: 3 - type: integer 
+	Parameter RESET_VALUE bound to: 3'b000 
+INFO: [Synth 8-6155] done synthesizing module 'eth_register__parameterized10' (5#1) [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_register.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'eth_register__parameterized11' [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_register.sv:22]
+	Parameter WIDTH bound to: 8 - type: integer 
+	Parameter RESET_VALUE bound to: 8'b01100100 
+INFO: [Synth 8-6155] done synthesizing module 'eth_register__parameterized11' (5#1) [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_register.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'eth_register__parameterized12' [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_register.sv:22]
+	Parameter WIDTH bound to: 1 - type: integer 
+	Parameter RESET_VALUE bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'eth_register__parameterized12' (5#1) [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_register.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'eth_register__parameterized13' [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_register.sv:22]
+	Parameter WIDTH bound to: 5 - type: integer 
+	Parameter RESET_VALUE bound to: 5'b00000 
+INFO: [Synth 8-6155] done synthesizing module 'eth_register__parameterized13' (5#1) [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_register.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'eth_register__parameterized14' [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_register.sv:22]
+	Parameter WIDTH bound to: 16 - type: integer 
+	Parameter RESET_VALUE bound to: 16'b0000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'eth_register__parameterized14' (5#1) [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_register.sv:22]
+WARNING: [Synth 8-567] referenced signal 'dbg_dat' should be on the sensitivity list [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_registers.sv:714]
+WARNING: [Synth 8-6014] Unused sequential element ResetTxCIrq_sync1_reg was removed.  [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_registers.sv:865]
+INFO: [Synth 8-6155] done synthesizing module 'eth_registers' (6#1) [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_registers.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'eth_maccontrol' [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_maccontrol.sv:21]
+INFO: [Synth 8-6157] synthesizing module 'eth_receivecontrol' [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_receivecontrol.sv:21]
+INFO: [Synth 8-6155] done synthesizing module 'eth_receivecontrol' (7#1) [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_receivecontrol.sv:21]
+INFO: [Synth 8-6157] synthesizing module 'eth_transmitcontrol' [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_transmitcontrol.sv:22]
+INFO: [Synth 8-6155] done synthesizing module 'eth_transmitcontrol' (8#1) [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_transmitcontrol.sv:22]
+INFO: [Synth 8-6155] done synthesizing module 'eth_maccontrol' (9#1) [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_maccontrol.sv:21]
+INFO: [Synth 8-6157] synthesizing module 'eth_txethmac' [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_txethmac.sv:21]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_txethmac.sv:298]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_txethmac.sv:359]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_txethmac.sv:377]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_txethmac.sv:395]
+WARNING: [Synth 8-567] referenced signal 'DA_Address1' should be on the sensitivity list [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_txethmac.sv:329]
+WARNING: [Synth 8-567] referenced signal 'MAC_Address' should be on the sensitivity list [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_txethmac.sv:329]
+WARNING: [Synth 8-567] referenced signal 'Payload_length' should be on the sensitivity list [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_txethmac.sv:329]
+INFO: [Synth 8-6157] synthesizing module 'eth_txcounters' [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_txcounters.sv:21]
+INFO: [Synth 8-6155] done synthesizing module 'eth_txcounters' (10#1) [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_txcounters.sv:21]
+INFO: [Synth 8-6157] synthesizing module 'eth_txstatem' [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_txstatem.sv:21]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_txstatem.sv:186]
+INFO: [Synth 8-6155] done synthesizing module 'eth_txstatem' (11#1) [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_txstatem.sv:21]
+INFO: [Synth 8-6157] synthesizing module 'eth_crc' [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_crc.sv:21]
+INFO: [Synth 8-6155] done synthesizing module 'eth_crc' (12#1) [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_crc.sv:21]
+INFO: [Synth 8-6157] synthesizing module 'eth_random' [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_random.sv:22]
+INFO: [Synth 8-6155] done synthesizing module 'eth_random' (13#1) [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_random.sv:22]
+WARNING: [Synth 8-6014] Unused sequential element Source_Address_reg was removed.  [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_txethmac.sv:293]
+WARNING: [Synth 8-6014] Unused sequential element Destination_address_reg was removed.  [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_txethmac.sv:294]
+WARNING: [Synth 8-6014] Unused sequential element Data_payload_length_reg was removed.  [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_txethmac.sv:309]
+INFO: [Synth 8-6155] done synthesizing module 'eth_txethmac' (14#1) [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_txethmac.sv:21]
+INFO: [Synth 8-6157] synthesizing module 'eth_rxethmac' [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_rxethmac.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'eth_rxstatem' [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_rxstatem.sv:21]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_rxstatem.sv:114]
+INFO: [Synth 8-6155] done synthesizing module 'eth_rxstatem' (15#1) [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_rxstatem.sv:21]
+INFO: [Synth 8-6157] synthesizing module 'eth_rxcounters' [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_rxcounters.sv:21]
+INFO: [Synth 8-6155] done synthesizing module 'eth_rxcounters' (16#1) [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_rxcounters.sv:21]
+INFO: [Synth 8-6157] synthesizing module 'eth_rxaddrcheck' [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_rxaddrcheck.sv:22]
+INFO: [Synth 8-251] pending to implement [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_rxaddrcheck.sv:80]
+INFO: [Synth 8-251] pending to implement [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_rxaddrcheck.sv:80]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_rxaddrcheck.sv:189]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_rxaddrcheck.sv:210]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_rxaddrcheck.sv:262]
+WARNING: [Synth 8-6014] Unused sequential element MulticastOK_reg was removed.  [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_rxaddrcheck.sv:173]
+WARNING: [Synth 8-6014] Unused sequential element Multicast_reg was removed.  [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_rxaddrcheck.sv:184]
+INFO: [Synth 8-6155] done synthesizing module 'eth_rxaddrcheck' (17#1) [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_rxaddrcheck.sv:22]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_rxethmac.sv:337]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_rxethmac.sv:570]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_rxethmac.sv:624]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_rxethmac.sv:712]
+WARNING: [Synth 8-6014] Unused sequential element Preamble_mismatch_reg was removed.  [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_rxethmac.sv:355]
+WARNING: [Synth 8-6014] Unused sequential element SFD_mismatch_reg was removed.  [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_rxethmac.sv:356]
+WARNING: [Synth 8-6014] Unused sequential element MRxDV_d_reg was removed.  [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_rxethmac.sv:554]
+WARNING: [Synth 8-6014] Unused sequential element payld_gt_maxfl_error_reg was removed.  [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_rxethmac.sv:586]
+WARNING: [Synth 8-6014] Unused sequential element shift8_py_gt_len_pad1_dat0_f6_reg was removed.  [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_rxethmac.sv:670]
+WARNING: [Synth 8-6014] Unused sequential element shift8_py_gt_len_pad1_dat0_f7_reg was removed.  [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_rxethmac.sv:671]
+INFO: [Synth 8-6155] done synthesizing module 'eth_rxethmac' (18#1) [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_rxethmac.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'apb_BDs_bridge' [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_apb_bds_bride.sv:20]
+INFO: [Synth 8-6155] done synthesizing module 'apb_BDs_bridge' (19#1) [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_apb_bds_bride.sv:20]
+INFO: [Synth 8-6157] synthesizing module 'eth_wishbone' [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_wishbone.sv:22]
+	Parameter TX_FIFO_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter TX_FIFO_DEPTH bound to: 16 - type: integer 
+	Parameter TX_FIFO_CNT_WIDTH bound to: 5 - type: integer 
+	Parameter RX_FIFO_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter RX_FIFO_DEPTH bound to: 16 - type: integer 
+	Parameter RX_FIFO_CNT_WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'eth_spram_256x32' [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_spram_256x32.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'eth_spram_256x32' (20#1) [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_spram_256x32.sv:23]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_wishbone.sv:557]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_wishbone.sv:1043]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_wishbone.sv:1044]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_wishbone.sv:1045]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_wishbone.sv:1042]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_wishbone.sv:1052]
+INFO: [Synth 8-6157] synthesizing module 'eth_fifo' [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_fifo.sv:22]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter DEPTH bound to: 16 - type: integer 
+	Parameter CNT_WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'eth_fifo' (21#1) [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_fifo.sv:22]
+INFO: [Synth 8-226] default block is never used [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_wishbone.sv:1649]
+WARNING: [Synth 8-6014] Unused sequential element m_wb_stb_o_reg was removed.  [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_wishbone.sv:1080]
+WARNING: [Synth 8-6014] Unused sequential element RxOverrun_reg was removed.  [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_wishbone.sv:2584]
+INFO: [Synth 8-6155] done synthesizing module 'eth_wishbone' (22#1) [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_wishbone.sv:22]
+WARNING: [Synth 8-7071] port 'm_wb_cti_o' of module 'eth_wishbone' is unconnected for instance 'wishbone' [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_top.sv:909]
+WARNING: [Synth 8-7071] port 'm_wb_bte_o' of module 'eth_wishbone' is unconnected for instance 'wishbone' [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_top.sv:909]
+WARNING: [Synth 8-7023] instance 'wishbone' of module 'eth_wishbone' has 71 connections declared, but only 69 given [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_top.sv:909]
+INFO: [Synth 8-6157] synthesizing module 'eth_macstatus' [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_macstatus.sv:22]
+INFO: [Synth 8-6155] done synthesizing module 'eth_macstatus' (23#1) [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_macstatus.sv:22]
+WARNING: [Synth 8-3848] Net wb_dbg_dat0 in module/entity eth_top does not have driver. [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_top.sv:145]
+INFO: [Synth 8-6155] done synthesizing module 'eth_top' (24#1) [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_top.sv:23]
+WARNING: [Synth 8-3917] design eth_top has port m_paddr_o[1] driven by constant 0
+WARNING: [Synth 8-3917] design eth_top has port m_paddr_o[0] driven by constant 0
+WARNING: [Synth 8-7129] Port RxByteCntGreat2 in module eth_macstatus is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TxUsedData in module eth_macstatus is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r_TxBDNum[7] in module eth_wishbone is either unconnected or has no load
+WARNING: [Synth 8-7129] Port InvalidSymbol in module eth_wishbone is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RxLateCollision in module eth_wishbone is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ShortFrame in module eth_wishbone is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DribbleNibble in module eth_wishbone is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Length_vs_payload_mismatch in module eth_wishbone is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RetryCntLatched[3] in module eth_wishbone is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RetryCntLatched[2] in module eth_wishbone is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RetryCntLatched[1] in module eth_wishbone is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RetryCntLatched[0] in module eth_wishbone is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DeferLatched in module eth_wishbone is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CarrierSenseLost in module eth_wishbone is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MRxD[3] in module eth_rxaddrcheck is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MRxD[2] in module eth_rxaddrcheck is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MRxD[1] in module eth_rxaddrcheck is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MRxD[0] in module eth_rxaddrcheck is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ByteCntEq6 in module eth_rxaddrcheck is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ByteCntEq7 in module eth_rxaddrcheck is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HASH0[31] in module eth_rxaddrcheck is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HASH0[30] in module eth_rxaddrcheck is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HASH0[29] in module eth_rxaddrcheck is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HASH0[28] in module eth_rxaddrcheck is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HASH0[27] in module eth_rxaddrcheck is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HASH0[26] in module eth_rxaddrcheck is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HASH0[25] in module eth_rxaddrcheck is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HASH0[24] in module eth_rxaddrcheck is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HASH0[23] in module eth_rxaddrcheck is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HASH0[22] in module eth_rxaddrcheck is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HASH0[21] in module eth_rxaddrcheck is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HASH0[20] in module eth_rxaddrcheck is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HASH0[19] in module eth_rxaddrcheck is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HASH0[18] in module eth_rxaddrcheck is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HASH0[17] in module eth_rxaddrcheck is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HASH0[16] in module eth_rxaddrcheck is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HASH0[15] in module eth_rxaddrcheck is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HASH0[14] in module eth_rxaddrcheck is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HASH0[13] in module eth_rxaddrcheck is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HASH0[12] in module eth_rxaddrcheck is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HASH0[11] in module eth_rxaddrcheck is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HASH0[10] in module eth_rxaddrcheck is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HASH0[9] in module eth_rxaddrcheck is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HASH0[8] in module eth_rxaddrcheck is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HASH0[7] in module eth_rxaddrcheck is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HASH0[6] in module eth_rxaddrcheck is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HASH0[5] in module eth_rxaddrcheck is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HASH0[4] in module eth_rxaddrcheck is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HASH0[3] in module eth_rxaddrcheck is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HASH0[2] in module eth_rxaddrcheck is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HASH0[1] in module eth_rxaddrcheck is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HASH0[0] in module eth_rxaddrcheck is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HASH1[31] in module eth_rxaddrcheck is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HASH1[30] in module eth_rxaddrcheck is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HASH1[29] in module eth_rxaddrcheck is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HASH1[28] in module eth_rxaddrcheck is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HASH1[27] in module eth_rxaddrcheck is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HASH1[26] in module eth_rxaddrcheck is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HASH1[25] in module eth_rxaddrcheck is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HASH1[24] in module eth_rxaddrcheck is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HASH1[23] in module eth_rxaddrcheck is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HASH1[22] in module eth_rxaddrcheck is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HASH1[21] in module eth_rxaddrcheck is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HASH1[20] in module eth_rxaddrcheck is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HASH1[19] in module eth_rxaddrcheck is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HASH1[18] in module eth_rxaddrcheck is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HASH1[17] in module eth_rxaddrcheck is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HASH1[16] in module eth_rxaddrcheck is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HASH1[15] in module eth_rxaddrcheck is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HASH1[14] in module eth_rxaddrcheck is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HASH1[13] in module eth_rxaddrcheck is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HASH1[12] in module eth_rxaddrcheck is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HASH1[11] in module eth_rxaddrcheck is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HASH1[10] in module eth_rxaddrcheck is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HASH1[9] in module eth_rxaddrcheck is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HASH1[8] in module eth_rxaddrcheck is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HASH1[7] in module eth_rxaddrcheck is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HASH1[6] in module eth_rxaddrcheck is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HASH1[5] in module eth_rxaddrcheck is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HASH1[4] in module eth_rxaddrcheck is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HASH1[3] in module eth_rxaddrcheck is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HASH1[2] in module eth_rxaddrcheck is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HASH1[1] in module eth_rxaddrcheck is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HASH1[0] in module eth_rxaddrcheck is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CrcHash[5] in module eth_rxaddrcheck is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CrcHash[4] in module eth_rxaddrcheck is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CrcHash[3] in module eth_rxaddrcheck is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CrcHash[2] in module eth_rxaddrcheck is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CrcHash[1] in module eth_rxaddrcheck is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CrcHash[0] in module eth_rxaddrcheck is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CrcHashGood in module eth_rxaddrcheck is either unconnected or has no load
+WARNING: [Synth 8-7129] Port StateSFD in module eth_rxaddrcheck is either unconnected or has no load
+WARNING: [Synth 8-7129] Port StateDrop in module eth_rxaddrcheck is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PassAll in module eth_rxaddrcheck is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ControlFrmAddressOK in module eth_rxaddrcheck is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MRxDEqD in module eth_rxcounters is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MaxFL[15] in module eth_rxcounters is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MaxFL[14] in module eth_rxcounters is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MaxFL[13] in module eth_rxcounters is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MaxFL[12] in module eth_rxcounters is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2846.895 ; gain = 0.000 ; free physical = 218 ; free virtual = 1187
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2846.895 ; gain = 0.000 ; free physical = 201 ; free virtual = 1196
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2854.793 ; gain = 7.898 ; free physical = 200 ; free virtual = 1197
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Synth 8-802] inferred FSM for state register 'state_tx_reg' in module 'eth_txstatem'
+INFO: [Synth 8-802] inferred FSM for state register 'state_rx_reg' in module 'eth_rxstatem'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'eth_wishbone'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+             STATE_DEFER |                             0101 |                             0000
+               STATE_IPG |                             1001 |                             0001
+              STATE_IDLE |                             0110 |                             0010
+          STATE_PREAMBLE |                             0000 |                             0011
+               STATE_SFD |                             0010 |                             0100
+                STATE_DA |                             0011 |                             0101
+                STATE_SA |                             1101 |                             0110
+            STATE_LENGTH |                             1010 |                             0111
+             STATE_DATA0 |                             1011 |                             1000
+             STATE_DATA1 |                             1100 |                             1001
+               STATE_PAD |                             1000 |                             1010
+               STATE_FCS |                             0111 |                             1011
+               STATE_JAM |                             0001 |                             1100
+           STATE_BACKOFF |                             0100 |                             1101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_tx_reg' using encoding 'sequential' in module 'eth_txstatem'
+WARNING: [Synth 8-327] inferring latch for variable 'MTxD_d_reg' [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_txethmac.sv:333]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              STATE_DROP |                        000001000 |                             0001
+              STATE_IDLE |                        000000010 |                             0010
+          STATE_PREAMBLE |                        100000000 |                             0011
+               STATE_SFD |                        010000000 |                             0100
+                STATE_DA |                        001000000 |                             0101
+                STATE_SA |                        000100000 |                             0110
+            STATE_LENGTH |                        000010000 |                             0111
+             STATE_DATA0 |                        000000100 |                             1000
+             STATE_DATA1 |                        000000001 |                             1001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_rx_reg' using encoding 'one-hot' in module 'eth_rxstatem'
+WARNING: [Synth 8-327] inferring latch for variable 'm_ack_sig_reg' [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_wishbone.sv:1025]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                               00
+                  STATE1 |                               01 |                               01
+                  STATE0 |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'eth_wishbone'
+WARNING: [Synth 8-327] inferring latch for variable 'm_wb_cyc_o_delayed_next_state_reg' [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_wishbone.sv:1054]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 2854.793 ; gain = 7.898 ; free physical = 687 ; free virtual = 1990
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'ethreg1/PACKETLEN_0' (eth_register) to 'ethreg1/MIITX_DATA_0'
+INFO: [Synth 8-223] decloning instance 'ethreg1/PACKETLEN_0' (eth_register) to 'ethreg1/RXHASH0_0'
+INFO: [Synth 8-223] decloning instance 'ethreg1/PACKETLEN_0' (eth_register) to 'ethreg1/RXHASH1_0'
+INFO: [Synth 8-223] decloning instance 'ethreg1/PACKETLEN_0' (eth_register) to 'ethreg1/TXCTRL_0'
+INFO: [Synth 8-223] decloning instance 'ethreg1/PACKETLEN_3' (eth_register) to 'ethreg1/RXHASH0_3'
+INFO: [Synth 8-223] decloning instance 'ethreg1/PACKETLEN_3' (eth_register) to 'ethreg1/RXHASH1_3'
+INFO: [Synth 8-223] decloning instance 'ethreg1/MIITX_DATA_1' (eth_register) to 'ethreg1/RXHASH0_1'
+INFO: [Synth 8-223] decloning instance 'ethreg1/MIITX_DATA_1' (eth_register) to 'ethreg1/RXHASH1_1'
+INFO: [Synth 8-223] decloning instance 'ethreg1/MIITX_DATA_1' (eth_register) to 'ethreg1/TXCTRL_1'
+INFO: [Synth 8-223] decloning instance 'ethreg1/RXHASH0_2' (eth_register) to 'ethreg1/RXHASH1_2'
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 3     
+	   2 Input   30 Bit       Adders := 1     
+	   3 Input   18 Bit       Adders := 1     
+	   2 Input   17 Bit       Adders := 2     
+	   2 Input   16 Bit       Adders := 8     
+	   2 Input    8 Bit       Adders := 1     
+	   2 Input    7 Bit       Adders := 5     
+	   2 Input    6 Bit       Adders := 2     
+	   2 Input    5 Bit       Adders := 4     
+	   2 Input    4 Bit       Adders := 7     
+	   2 Input    3 Bit       Adders := 4     
+	   2 Input    2 Bit       Adders := 3     
+	   2 Input    1 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 65    
+	   4 Input      1 Bit         XORs := 8     
+	   3 Input      1 Bit         XORs := 6     
++---Registers : 
+	               32 Bit    Registers := 41    
+	               30 Bit    Registers := 1     
+	               24 Bit    Registers := 1     
+	               16 Bit    Registers := 14    
+	               10 Bit    Registers := 2     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 28    
+	                7 Bit    Registers := 9     
+	                6 Bit    Registers := 4     
+	                5 Bit    Registers := 6     
+	                4 Bit    Registers := 13    
+	                3 Bit    Registers := 6     
+	                2 Bit    Registers := 9     
+	                1 Bit    Registers := 299   
++---RAMs : 
+	               2K Bit	(256 X 8 bit)          RAMs := 4     
++---Muxes : 
+	   2 Input   48 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 14    
+	   4 Input   32 Bit        Muxes := 1     
+	   3 Input   32 Bit        Muxes := 1     
+	   2 Input   30 Bit        Muxes := 2     
+	  10 Input   30 Bit        Muxes := 1     
+	  10 Input   24 Bit        Muxes := 1     
+	   2 Input   24 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 15    
+	   3 Input   16 Bit        Muxes := 1     
+	   9 Input    9 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 12    
+	   2 Input    8 Bit        Muxes := 23    
+	  19 Input    8 Bit        Muxes := 1     
+	   4 Input    8 Bit        Muxes := 2     
+	   2 Input    7 Bit        Muxes := 10    
+	   2 Input    6 Bit        Muxes := 4     
+	   2 Input    5 Bit        Muxes := 6     
+	   2 Input    4 Bit        Muxes := 11    
+	  32 Input    4 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 5     
+	  10 Input    3 Bit        Muxes := 3     
+	   2 Input    2 Bit        Muxes := 13    
+	   4 Input    2 Bit        Muxes := 2     
+	   3 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 292   
+	   7 Input    1 Bit        Muxes := 2     
+	   5 Input    1 Bit        Muxes := 1     
+	  14 Input    1 Bit        Muxes := 1     
+	  13 Input    1 Bit        Muxes := 1     
+	   4 Input    1 Bit        Muxes := 5     
+	  10 Input    1 Bit        Muxes := 18    
+	   9 Input    1 Bit        Muxes := 3     
+	   3 Input    1 Bit        Muxes := 7     
+	   8 Input    1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3917] design eth_top has port m_paddr_o[1] driven by constant 0
+WARNING: [Synth 8-3917] design eth_top has port m_paddr_o[0] driven by constant 0
+RAM Pipeline Warning: Read Address Register Found For RAM bd_ram/mem0_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM bd_ram/mem0_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM bd_ram/mem1_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM bd_ram/mem1_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM bd_ram/mem2_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM bd_ram/mem2_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM bd_ram/mem3_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM bd_ram/mem3_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM bd_ram/mem0_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM bd_ram/mem1_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM bd_ram/mem2_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM bd_ram/mem3_reg. We will not be able to pipeline it. This may degrade performance. 
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin DataOut[3] with 1st driver pin 'ethreg1/MODER_1/DataOut_reg[3]/Q' [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_register.sv:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin DataOut[3] with 2nd driver pin 'GND' [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_register.sv:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net DataOut[3] is connected to at least one constant driver which has been preserved, other driver is ignored [/home/krisemi_satcom/ETHERNET/src/uprv_ethernet_eth_register.sv:42]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:17 . Memory (MB): peak = 2854.793 ; gain = 7.898 ; free physical = 289 ; free virtual = 1787
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object      | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|wishbone    | bd_ram/mem0_reg | 256 x 8(WRITE_FIRST)   | W | R |                        |   |   | Port A           | 1      | 0      | 
+|wishbone    | bd_ram/mem1_reg | 256 x 8(WRITE_FIRST)   | W | R |                        |   |   | Port A           | 1      | 0      | 
+|wishbone    | bd_ram/mem2_reg | 256 x 8(WRITE_FIRST)   | W | R |                        |   |   | Port A           | 1      | 0      | 
+|wishbone    | bd_ram/mem3_reg | 256 x 8(WRITE_FIRST)   | W | R |                        |   |   | Port A           | 1      | 0      | 
++------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 2854.793 ; gain = 7.898 ; free physical = 289 ; free virtual = 1788
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object      | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|wishbone    | bd_ram/mem0_reg | 256 x 8(WRITE_FIRST)   | W | R |                        |   |   | Port A           | 1      | 0      | 
+|wishbone    | bd_ram/mem1_reg | 256 x 8(WRITE_FIRST)   | W | R |                        |   |   | Port A           | 1      | 0      | 
+|wishbone    | bd_ram/mem2_reg | 256 x 8(WRITE_FIRST)   | W | R |                        |   |   | Port A           | 1      | 0      | 
+|wishbone    | bd_ram/mem3_reg | 256 x 8(WRITE_FIRST)   | W | R |                        |   |   | Port A           | 1      | 0      | 
++------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance wishbone/bd_ram/mem0_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance wishbone/bd_ram/mem1_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance wishbone/bd_ram/mem2_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance wishbone/bd_ram/mem3_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:18 . Memory (MB): peak = 2854.793 ; gain = 7.898 ; free physical = 303 ; free virtual = 1803
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 2854.793 ; gain = 7.898 ; free physical = 273 ; free virtual = 1823
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 2854.793 ; gain = 7.898 ; free physical = 273 ; free virtual = 1823
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:21 . Memory (MB): peak = 2854.793 ; gain = 7.898 ; free physical = 273 ; free virtual = 1823
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:21 . Memory (MB): peak = 2854.793 ; gain = 7.898 ; free physical = 273 ; free virtual = 1823
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:21 . Memory (MB): peak = 2854.793 ; gain = 7.898 ; free physical = 273 ; free virtual = 1823
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:21 . Memory (MB): peak = 2854.793 ; gain = 7.898 ; free physical = 273 ; free virtual = 1823
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+-------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                      | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+-------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|eth_top     | wishbone/Tx_BAD_FRAME_f6_reg  | 6      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|eth_top     | wishbone/TxStatusWrite_f6_reg | 6      | 1     | YES          | NO                 | YES               | 1      | 0       | 
++------------+-------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     3|
+|2     |CARRY4   |   104|
+|3     |LUT1     |    73|
+|4     |LUT2     |   371|
+|5     |LUT3     |   135|
+|6     |LUT4     |   190|
+|7     |LUT5     |   345|
+|8     |LUT6     |   875|
+|9     |MUXF7    |   164|
+|10    |RAMB18E1 |     4|
+|11    |SRL16E   |     2|
+|12    |FDCE     |   802|
+|13    |FDPE     |    82|
+|14    |FDRE     |  1098|
+|15    |LD       |     6|
+|16    |IBUF     |    89|
+|17    |OBUF     |    75|
+|18    |OBUFT    |    32|
++------+---------+------+
+
+Report Instance Areas: 
++------+--------------------+------------------------------+------+
+|      |Instance            |Module                        |Cells |
++------+--------------------+------------------------------+------+
+|1     |top                 |                              |  4450|
+|2     |  macstatus1        |eth_macstatus                 |     7|
+|3     |  ethreg1           |eth_registers                 |   248|
+|4     |    INT_MASK_0      |eth_register__parameterized2  |    19|
+|5     |    MAC_ADDR0_0     |eth_register                  |    16|
+|6     |    MAC_ADDR0_1     |eth_register_2                |    18|
+|7     |    MAC_ADDR0_2     |eth_register_3                |    29|
+|8     |    MAC_ADDR0_3     |eth_register_4                |    27|
+|9     |    MAC_ADDR1_0     |eth_register_5                |    19|
+|10    |    MAC_ADDR1_1     |eth_register_6                |    20|
+|11    |    MIIADDRESS_0    |eth_register__parameterized13 |    29|
+|12    |    MODER_0         |eth_register_7                |    14|
+|13    |    MODER_1         |eth_register__parameterized0  |    14|
+|14    |    TX_BD_NUM_0     |eth_register__parameterized7  |    37|
+|15    |  maccontrol1       |eth_maccontrol                |    24|
+|16    |    receivecontrol1 |eth_receivecontrol            |    24|
+|17    |  rxethmac1         |eth_rxethmac                  |   535|
+|18    |    crcrx           |eth_crc_1                     |    73|
+|19    |    rxaddrcheck1    |eth_rxaddrcheck               |    19|
+|20    |    rxcounters1     |eth_rxcounters                |   268|
+|21    |    rxstatem1       |eth_rxstatem                  |    76|
+|22    |  txethmac1         |eth_txethmac                  |   408|
+|23    |    random1         |eth_random                    |    36|
+|24    |    txcounters1     |eth_txcounters                |   158|
+|25    |    txcrc           |eth_crc                       |    38|
+|26    |    txstatem1       |eth_txstatem                  |   136|
+|27    |  u_apb_BDs_bridge  |apb_BDs_bridge                |   101|
+|28    |  wishbone          |eth_wishbone                  |  2901|
+|29    |    bd_ram          |eth_spram_256x32              |   210|
+|30    |    rx_fifo         |eth_fifo                      |   990|
+|31    |    tx_fifo         |eth_fifo_0                    |   850|
++------+--------------------+------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:21 . Memory (MB): peak = 2854.793 ; gain = 7.898 ; free physical = 273 ; free virtual = 1824
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 3 critical warnings and 239 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:21 . Memory (MB): peak = 2854.793 ; gain = 7.898 ; free physical = 275 ; free virtual = 1827
+Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:21 . Memory (MB): peak = 2854.801 ; gain = 7.898 ; free physical = 275 ; free virtual = 1828
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2854.801 ; gain = 0.000 ; free physical = 297 ; free virtual = 1918
+INFO: [Netlist 29-17] Analyzing 278 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2878.805 ; gain = 0.000 ; free physical = 167 ; free virtual = 1830
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 6 instances were transformed.
+  LD => LDCE: 6 instances
+
+Synth Design complete, checksum: a1bd8ea8
+INFO: [Common 17-83] Releasing license: Synthesis
+136 Infos, 133 Warnings, 3 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:23 . Memory (MB): peak = 2878.805 ; gain = 32.016 ; free physical = 357 ; free virtual = 2020
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint '/home/krisemi_satcom/ETHERNET/project/ETHERNET_WITH_APB.runs/synth_1/eth_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file eth_top_utilization_synth.rpt -pb eth_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Nov 10 15:44:41 2024...
